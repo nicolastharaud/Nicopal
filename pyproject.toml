@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nicopal"
+version = "0.2.0"
+description = "Nicopal: colour palettes designed by a protanop"
+readme = "README.md"
+authors = [{name = "Nicolas Tharaud"}]
+dependencies = ["matplotlib","numpy"]
+
+[tool.setuptools.package-data]
+nicopal = ["data/*"]
