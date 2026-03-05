@@ -28,10 +28,10 @@ Les valeurs de ΔE moyen et ΔE maximal résument quantitativement la palette. L
 perceptuelle moyenne entre couleurs adjacentes, reflétant la régularité globale, tandis que le ΔE maximal correspond à 
 la transition la plus prononcée (voir Table 1 dans [2]).
 
----
 
 ***************************************************************** 
 Bibliographie : 
+
 [1] Crameri, Fabio, Grace E. Shephard, and Philip J. Heron. 2020. ‘The Misuse of Colour in Science Communication’. 
 Nature Communications 11(1): 5444. doi:10.1038/s41467-020-19160-7. 
 
@@ -80,13 +80,12 @@ ax.contourf(x, y, z, cmap=colormap)
 
 ## Nom des palettes
 
-| Boron   | Carbon    | Chlorine  |
-| Cobalt  | Iodine    | Iron      |
-| Lithium | Magnesium | Manganese |
-| Oxygen  | Selenium  | Sodium    |
-| Sulfur  | Vanadium  |           |
+Boron   | Carbon    | Chlorine  |
+Cobalt  | Iodine    | Iron      |
+Lithium | Magnesium | Manganese |
+Oxygen  | Selenium  | Sodium    |
+Sulfur  | Vanadium  |           
 
-:) NT
+# :) NT
 
-
-##############################################################################################
+---
