@@ -4,11 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nicopal"
-version = "0.2.0"
-description = "Nicopal: colour palettes designed by a protanop"
+version = "0.4.5"
+description = "Nicopal: colour palettes designed by a protanopic student."
 readme = "README.md"
-authors = [{name = "Nicolas Tharaud"}]
+authors = [{name = "Nicolas Tharaud", email="n.tharaud6@gmail.com"}]
+license = {file="LICENSE"}
+keywords = ["color", "palettes", "visualization", "scientific", "color-deficiency"]
 dependencies = ["matplotlib","numpy"]
 
 [tool.setuptools.package-data]
 nicopal = ["data/*"]
+
+[project.urls]
+Homepage = "https://github.com/nicolastharaud"
