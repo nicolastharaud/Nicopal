@@ -1,7 +1,8 @@
 # Nicopal
 
 ## Context
-These color palettes were created by **Nicolas Tharaud** inspired by the method of **Fabio Crameri** [1]. Their purpose is to represent climatic variables as accurately as possible, without visual mis-interpretation. A color palette must be careffuly chosen according to the variable being represented, so that it is interpreted in the same way by every observer. The color palettes were created by a protanope color-blind student (red color deficiency). Furthermore, the contrast of some palettes will be more visible to a protanope color-blind person than to someone with "normal" vision or a different type of color blindness, and vice versa.
+**Nicopal** provides perceptually uniform and colour-vision-deficiency-friendly colour palettes for scientific data visualisation. Inspired by the work of **Fabio Crameri** [1], these palettes are designed to represent data as faithfully as possible, ensuring consistent interpretation across all observers — regardless of their colour vision.
+Developed by a protanope (red colour deficiency) student, for everyone.
 
 ---
 
@@ -98,7 +99,7 @@ Returns `n` discrete colors extracted from the palette.
 
 ### 9. Palette demonstration
 
-`print(ncp.pal_demo("Lithium")`
+`print(ncp.pal_demo("Lithium"))`
 
 Displays example visualizations using the chosen palette
 
@@ -106,7 +107,7 @@ Displays example visualizations using the chosen palette
 
 ### 10. Palette names
 
-`Boron`  | `Carbon`   | `Cesium`   | `Chlorine` | `Cobalt` | `Iodine`  | `Iron`    | `Lithium`  | `Magnesium` | `Manganese` | `Neon` | `Nitrogen` | `Oxygen` | `Rubidium` | `Selenium` | `Silicon`  | `Sodium` | `Sulfur`  | `Uranium` | `Vanadium` | `Zinc` |
+`Boron` | `Carbon` | `Cesium` | `Chlorine` | `Cobalt` | `Iodine` | `Iridium` | `Iron` | `Lithium` | `Magnesium` | `Manganese` | `Mercury` | `Neon` | `Nickel` | `Nitrogen` | `Osmium` | `Oxygen` | `Radium` | `Rubidium` | `Selenium` | `Silicon` | `Silver` | `Sodium` | `Sulfur` | `Uranium` | `Vanadium` | `Zinc` |
 
 ---
 

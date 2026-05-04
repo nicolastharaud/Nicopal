@@ -15,11 +15,11 @@ Nicopal Version Information
 
 version = """\
 Package : Nicopal 
-Version : 0.4.5
+Version : 0.5.0
 Author  : Nicolas Tharaud
 Mail    : n.tharaud6@gmail.com
 Copyright (c) 2026 Nicolas Tharaud
-Colour palettes designed by a protanopic student
+Colour palettes designed for everyone.
 """
 
 def show_info():
