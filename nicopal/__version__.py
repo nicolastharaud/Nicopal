@@ -15,7 +15,7 @@ Nicopal Version Information
 
 version = """\
 Package : Nicopal 
-Version : 0.5.0
+Version : 0.6.1
 Author  : Nicolas Tharaud
 Mail    : n.tharaud6@gmail.com
 Copyright (c) 2026 Nicolas Tharaud
