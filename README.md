@@ -58,7 +58,7 @@ Displays a gradient of the chosen palette.
 
 ---
 
-### 5. Visualiser toutes les palettes
+### 5. Visualize all palettes
 
 `ncp.pal_all()`
 
