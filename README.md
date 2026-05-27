@@ -58,7 +58,7 @@ Displays a gradient of the chosen palette.
 
 ---
 
-### 5. Visualiser toutes les palettes
+### 5. Visualize all palettes
 
 `ncp.pal_all()`
 
@@ -68,7 +68,7 @@ Displays all palettes and their associated names.
 
 ### 6. Load a palette as a list of HEX colours
 
-`ncp.pal_hex("Lithium")         # all stored colours`
+`ncp.pal_hex("Lithium")         # all stored colours`    
 `ncp.pal_hex("Lithium", N=10)   # resample to exactly 10 colours`
 
 Returns the palette as a list of HEX color codes (e.g. `['#1a2b3c', ...]`).
@@ -118,6 +118,8 @@ Displays example visualizations using the chosen palette : continuous band, 1-D 
 `Boron` | `Carbon` | `Cesium` | `Chlorine` | `Cobalt` | `Iodine` | `Iridium` | `Iron` | `Lithium` | `Magnesium` | `Manganese` | `Mercury` | `Neon` | `Nickel` | `Nitrogen` | `Osmium` | `Oxygen` | `Radium` | `Rubidium` | `Selenium` | `Silicon` | `Silver` | `Sodium` | `Sulfur` | `Uranium` | `Vanadium` | `Zinc` |
 
 > All names are case-insensitive. The `_r` suffix reverses any palette (e.g. `"Lithium_r"`).
+
+![Nicopal Palettes](Nicopal_palettes.png)
 
 ---
 
