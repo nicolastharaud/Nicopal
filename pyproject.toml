@@ -4,16 +4,19 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nicopal"
-version = "0.6.2"
+version = "0.7.5"
 description = "Nicopal: colour palettes designed for everyone."
-readme = "README.md"
+readme = {file = "README.md", content-type = "text/markdown"}
 authors = [{name = "Nicolas Tharaud", email="n.tharaud6@gmail.com"}]
 license = {file="LICENSE"}
 keywords = ["color", "palettes", "accessibility", "scientific", "color-deficiency"]
-dependencies = ["matplotlib","numpy"]
+dependencies = ["matplotlib", "numpy"]
+
+[project.optional-dependencies]
+advanced = ["scipy", "cartopy"]
 
 [tool.setuptools.package-data]
-nicopal = ["data/*"]
+nicopal = ["data/*", "fonts/*"]
 
 [project.urls]
 Homepage = "https://github.com/nicolastharaud"

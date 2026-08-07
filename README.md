@@ -13,7 +13,10 @@ These palettes can be used as a drop-in complement to the [colour-vision deficie
 
 In a Python console or terminal :
 
-`pip install nicopal`
+`pip install nicopal`             # Standard installation
+`pip install nicopal'[advanced]'` # Advanced installation
+
+The advanced installation includes `scipy` and `cartopy`, which are only required for `pal_demo_advanced` (see Section 9).
 
 ---
 
@@ -108,17 +111,27 @@ Returns `n` discrete colors extracted evenly from the palette.
 ### 9. Palette demonstration
 
 `ncp.pal_demo("Selenium")`
+`ncp.pal_demo_advanced("Selenium")`
 
-Displays example visualizations using the chosen palette : continuous band, 1-D signal, perceptual lightness curve, 2-D field, discrete levels, and colour-vision-deficiency simulation.
+Displays various types of plots using the specified color palette. The function `pal_demo_advanced` requires two additional optional libraries (`scipy` and `cartopy`), which enable visualizing the effect of a palette on maps. These two libraries are optional and not required when installing the package; however, they can be installed directly during package installation using the command `pip install 'nicopal[advanced]'`.
 
 ---
 
-### 10. Palette names
+### 10. Palette score (Coming soon)
+
+`ncp.pal_score("Zinc")`
+
+Displays four figures illustrating the different tests performed on the palette that determine its scientific validity score.
+
+---
+
+### 11. Palette names
 
 `Boron` | `Carbon` | `Cesium` | `Chlorine` | `Cobalt` | `Iodine` | `Iridium` | `Iron` | `Lithium` | `Magnesium` | `Manganese` | `Mercury` | `Neon` | `Nickel` | `Nitrogen` | `Osmium` | `Oxygen` | `Radium` | `Rubidium` | `Selenium` | `Silicon` | `Silver` | `Sodium` | `Sulfur` | `Uranium` | `Vanadium` | `Zinc` |
 
 > All names are case-insensitive. The `_r` suffix reverses any palette (e.g. `"Lithium_r"`).
 
+See figure (available on GitHub): [Nicopal Palettes](https://github.com/nicolastharaud/Nicopal/blob/main/Nicopal_palettes.png)
 ![Nicopal Palettes](Nicopal_palettes.png)
 
 ---
