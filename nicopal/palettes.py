@@ -542,4 +542,69 @@ def pal_demo_advanced(name):
         plot_barplot(ax)
         plt.show()
         
+# --- Return the associated colormap validation score
+# --- Only for sequential colormaps yet
+_PAL_SCORES = {
+    "boron":     ("Yes", 0.000, 1.000, "Yes", 1.000, 10.0),
+    "carbon":    ("Yes", 0.001, 1.000, "Yes", 1.000, 10.0),
+    "cesium":    ("Yes", 0.001, 1.000, "Yes", 1.000, 10.0),
+    "chlorine":  ("Yes", 0.000, 1.000, "Yes", 1.000, 10.0),
+    "iodine":    ("Yes", 0.000, 1.000, "Yes", 1.000, 10.0),
+    "iridium":   ("Yes", 0.001, 1.001, "Yes", 1.000, 10.0),
+    "magnesium": ("Yes", 0.000, 1.000, "Yes", 1.000, 10.0),
+    "manganese": ("Yes", 0.032, 1.053, "Yes", 1.000, 10.0),
+    "neon":      ("Yes", 0.029, 1.028, "Yes", 1.000, 10.0),
+    "nitrogen":  ("Yes", 0.003, 1.000, "Yes", 1.000, 10.0),
+    "oxygen":    ("Yes", 0.000, 1.000, "Yes", 1.000, 10.0),
+    "radium":    ("Yes", 0.000, 1.000, "Yes", 1.000, 10.0),
+    "selenium":  ("Yes", 0.000, 1.000, "Yes", 1.000, 10.0),
+    "silver":    ("Yes", 0.000, 1.000, "Yes", 1.000, 10.0),
+    "uranium":   ("Yes", 0.093, 1.170, "Yes", 1.000, 10.0),
+    "zinc":      ("Yes", 0.000, 1.000, "Yes", 1.000, 10.0)}
+
+def pal_score(name=None):
+    headers = ["Palette", "Lightness", "Linearity", "ΔE ratio", "Grayscale", "CVD", "Score"]
+    line = (f"{headers[0]:<12}" f"{headers[1]:<12}" f"{headers[2]:<12}" f"{headers[3]:<12}" 
+            f"{headers[4]:<12}" f"{headers[5]:<10}" f"{headers[6]:<8}")
+
+    print()
+    print("Nicopal palette colormap validation scores")
+    print("=" * len(line))
+    print(line)
+    print("-" * len(line))
+
+    if name is None:
+        items = sorted(_PAL_SCORES.items())
+    else:
+        name = name.lower()
+        if name not in _PAL_SCORES:
+            raise ValueError(
+                f"Unknown palette '{name}'. "
+                f"Available palettes: {', '.join(sorted(_PAL_SCORES.keys()))}")
+        items = [(name, _PAL_SCORES[name])]
+    for pal, values in items:
+        lightness, linearity, jumps, grayscale, cvd, score = values
+        print(f"{pal.capitalize():<12}" f"{lightness:<12}" f"{linearity:<12.3f}" 
+              f"{jumps:<12.3f}" f"{grayscale:<12}" f"{cvd:<10.3f}" f"{score:<8.1f}")
+
+    print()
+    print(" ", "-" * 47)
+    print("  Tests and thresholds")
+    print(" ", "-" * 47)
+    print("  1. Lightness monotonicity ........ Yes")
+    print("  2. Perceptual linearity .......... < 0.23")
+    print("  3. Perceptual jumps .............. < 2.00")
+    print("  4. Grayscale monotonicity ........ Yes")
+    print("  5. CVD accessibility ............. > 0.75")
+    print("  Final score ...................... > 9.50 / 10")
+    print(" ", "-" * 47)
+    print()
+
+    print(" ", "-" * 63)  
+    print("  Notes")
+    print(" ", "-" * 63)
+    print("  + The current scoring system is only available for sequential \n    colour palettes.")
+    print("  + The methodology and validation of these scores are currently \n    being prepared for publication.")
+    print(" ", "-" * 63)
+    print()
         

@@ -14,12 +14,18 @@ Nicopal Version Information
 """
 
 version = """\
-Package : Nicopal 
-Version : 0.7.5
-Author  : Nicolas Tharaud
-Mail    : n.tharaud6@gmail.com
-Copyright (c) 2026 Nicolas Tharaud
-Colour palettes designed for everyone.
++---------------------------------------------------+
+| Package  : Nicopal                                |
+| Version  : 0.8.0                                  |
+| Author   : Nicolas Tharaud                        |
+| Mail     : nicolas.tharaud@lsce.ipsl.fr           |
+| Citation : This work uses the Nicopal colour      |
+|            palettes developed by Nicolas Tharaud. |
+|---------------------------------------------------|          
+| Colour palettes designed for everyone.            |
+|---------------------------------------------------|           
+| Copyright (c) 2026, Nicolas Tharaud               |
++---------------------------------------------------+
 """
 
 def show_info():

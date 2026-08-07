@@ -13,7 +13,7 @@ These palettes can be used as a drop-in complement to the [colour-vision deficie
 
 In a Python console or terminal :
 
-`pip install nicopal`             # Standard installation
+`pip install nicopal`             # Standard installation      
 `pip install nicopal'[advanced]'` # Advanced installation
 
 The advanced installation includes `scipy` and `cartopy`, which are only required for `pal_demo_advanced` (see Section 9).
@@ -32,7 +32,7 @@ The advanced installation includes `scipy` and `cartopy`, which are only require
 
 `print(ncp.version)`
 
-Displays the version and a short description of the package.
+Displays the version and some information about the package.
 
 ---
 
@@ -65,14 +65,14 @@ Displays a gradient of the chosen palette.
 
 `ncp.pal_all()`
 
-Displays all palettes and their associated names.
+Displays all palettes and their associated names (see Section 11).  
 
 ---
 
 ### 6. Load a palette as a list of HEX colours
 
-`ncp.pal_hex("Lithium")         # all stored colours`    
-`ncp.pal_hex("Lithium", N=10)   # resample to exactly 10 colours`
+`ncp.pal_hex("Lithium")`         # all stored colours     
+`ncp.pal_hex("Lithium", N=10)`   # resample to exactly 10 colours  
 
 Returns the palette as a list of HEX color codes (e.g. `['#1a2b3c', ...]`).
 See the [Matplotlib colour formats documentation](https://matplotlib.org/stable/users/explain/colors/colors.html#color-formats) for details on how to use these strings.
@@ -81,10 +81,10 @@ See the [Matplotlib colour formats documentation](https://matplotlib.org/stable/
 
 ### 7. Use a palette as a colormap
 
-`colormap   = ncp.pal("Lithium")                 # normal order`               
-`colormap_r = ncp.pal("Lithium", reverse=True)   # reversed via parameter`  
-`colormap_r = ncp.pal("Lithium_r")               # reversed via '_r' suffix`   
-`colormap_r = ncp.pal("Lithium_r").reversed()    # reversed via Matplotlib native method`    
+`colormap   = ncp.pal("Lithium")`                 # normal order                 
+`colormap_r = ncp.pal("Lithium", reverse=True)`   # reversed via parameter     
+`colormap_r = ncp.pal("Lithium_r")`               # reversed via '_r' suffix     
+`colormap_r = ncp.pal("Lithium_r").reversed()`    # reversed via Matplotlib native method      
 
 `ax.contourf(x, y, z, cmap = colormap)`
 
@@ -110,18 +110,22 @@ Returns `n` discrete colors extracted evenly from the palette.
 
 ### 9. Palette demonstration
 
-`ncp.pal_demo("Selenium")`
+`ncp.pal_demo("Selenium")`          
 `ncp.pal_demo_advanced("Selenium")`
 
-Displays various types of plots using the specified color palette. The function `pal_demo_advanced` requires two additional optional libraries (`scipy` and `cartopy`), which enable visualizing the effect of a palette on maps. These two libraries are optional and not required when installing the package; however, they can be installed directly during package installation using the command `pip install 'nicopal[advanced]'`.
+Displays various types of plots using the specified color palette. The function `pal_demo_advanced` requires two additional optional libraries (`scipy` and `cartopy`), which enable visualizing the effect of a palette on maps. These two libraries are optional and not required when installing the package; however, they can be installed directly during package installation using the command `pip install 'nicopal[advanced]'`. 
 
 ---
 
-### 10. Palette score (Coming soon)
+### 10. Palette score 
 
-`ncp.pal_score("Zinc")`
+Display the scientific colourmap validation score of the Nicopal sequential colour palettes.  
 
-Displays four figures illustrating the different tests performed on the palette that determine its scientific validity score.
+`ncp.pal_score()`        # For all sequential palettes  
+`ncp.pal_score("Zinc")`  # For a single palette  
+
+The current scoring system is available only for sequential colour palettes.  
+The methodology, validation, and interpretation of the different metrics used in the colourmap validation score are currently being prepared for publication in a scientific article.  
 
 ---
 
@@ -131,8 +135,7 @@ Displays four figures illustrating the different tests performed on the palette 
 
 > All names are case-insensitive. The `_r` suffix reverses any palette (e.g. `"Lithium_r"`).
 
-See figure (available on GitHub): [Nicopal Palettes](https://github.com/nicolastharaud/Nicopal/blob/main/Nicopal_palettes.png)
-![Nicopal Palettes](Nicopal_palettes.png)
+![Nicopal Palettes](https://raw.githubusercontent.com/nicolastharaud/Nicopal/main/Nicopal_palettes.png)
 
 ---
 
@@ -161,6 +164,16 @@ AGU, 85(40), 385–391, doi:10.1029/2004EO400002.
 
 
 *****************************************************************
+
+### Citation
+
+If you use Nicopal in scientific publications, please cite the package.
+
+**Suggested acknowledgement**
+
+> This work uses the Nicopal colour palettes developed by Nicolas Tharaud.
+
+---
 
 # :) NT
 

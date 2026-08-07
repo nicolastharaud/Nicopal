@@ -1,22 +1,42 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "nicopal"
-version = "0.7.5"
-description = "Nicopal: colour palettes designed for everyone."
+version = "0.8.0"
+description = "Colour palettes designed for everyone."
 readme = {file = "README.md", content-type = "text/markdown"}
 authors = [{name = "Nicolas Tharaud", email="n.tharaud6@gmail.com"}]
-license = {file="LICENSE"}
-keywords = ["color", "palettes", "accessibility", "scientific", "color-deficiency"]
-dependencies = ["matplotlib", "numpy"]
+
+license = "MIT"
+license-files = ["LICENSE.txt"]
+
+requires-python = ">=3.9"
+
+keywords = ["colour", "color", "colormap", "palette", "scientific", "visualization", "accessibility", "colorblind", "color-deficiency"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Visualization"]
+
+dependencies = ["matplotlib>=3.6", "numpy>=1.20"]
 
 [project.optional-dependencies]
-advanced = ["scipy", "cartopy"]
+advanced = ["cartopy>=0.21", "scipy>=1.8"]
+
+[project.urls]
+Homepage = "https://github.com/nicolastharaud/Nicopal"
+Repository = "https://github.com/nicolastharaud/Nicopal"
+Issues = "https://github.com/nicolastharaud/Nicopal/issues"
 
 [tool.setuptools.package-data]
 nicopal = ["data/*", "fonts/*"]
-
-[project.urls]
-Homepage = "https://github.com/nicolastharaud"
