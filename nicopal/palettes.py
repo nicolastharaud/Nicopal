@@ -110,7 +110,7 @@ def pal_show(name, N=256):
         plt.show()
 
 # --- Visualize all palettes
-def pal_gallery(N=256, ncols=3, n_discrete=8, reverse=False):
+def pal_gallery(N=256, ncols=4, n_discrete=8, reverse=False):
     with use_nunito():
         palettes = pal_list()
         n     = len(palettes)

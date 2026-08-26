@@ -131,7 +131,7 @@ The methodology, validation, and interpretation of the different metrics used in
 
 ### 11. Palette names
 
-`Boron` | `Carbon` | `Cesium` | `Chlorine` | `Cobalt` | `Iodine` | `Iridium` | `Iron` | `Lithium` | `Magnesium` | `Manganese` | `Mercury` | `Neon` | `Nickel` | `Nitrogen` | `Osmium` | `Oxygen` | `Radium` | `Rubidium` | `Selenium` | `Silicon` | `Silver` | `Sodium` | `Sulfur` | `Uranium` | `Vanadium` | `Zinc` |
+`Arsenic` | `Boron` | `Carbon` | `Cesium` | `Chlorine` | `Cobalt` | `Iodine` | `Iridium` | `Iron` | `Krypton`| `Lithium` | `Magnesium` | `Manganese` | `Mercury` | `Neon` | `Nickel` | `Nitrogen` | `Osmium` | `Oxygen` | `Radium` | `Rubidium` | `Selenium` | `Silicon` | `Silver` | `Sodium` | `Sulfur` | `Tin` | `Uranium` | `Vanadium` | `Xenon`| `Zinc` |
 
 > All names are case-insensitive. The `_r` suffix reverses any palette (e.g. `"Lithium_r"`).
 
