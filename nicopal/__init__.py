@@ -12,7 +12,7 @@ Created on Thu Mar  5 10:46:13 2026
 from .__version__ import version 
 from .palettes import pal_hex, pal, pal_list, pal_show, pal_test 
 from .palettes import pal_gallery, pal_all, pal_sample, pal_demo 
-from .palettes import pal_demo_advanced, pal_score
+from .palettes import pal_demo_advanced, pal_badge
 
 # Historique :
 # ------------  
@@ -25,4 +25,4 @@ from .palettes import pal_demo_advanced, pal_score
 # pal_sample        -> v0.3.1
 # pal_demo          -> v0.3.1 --> v0.4.3 --> v0.7.5
 # pal_demo_advanced -> v0.7.5
-# pal_score         -> v0.7.9
+# pal_badge         -> v0.7.9 --> v0.8.2

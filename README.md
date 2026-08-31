@@ -117,15 +117,14 @@ Displays various types of plots using the specified color palette. The function 
 
 ---
 
-### 10. Palette score 
+### 10. Palette badge 
 
-Display the scientific colourmap validation score of the Nicopal sequential colour palettes.  
+Display the badge and its explanation for Nicopal's sequential colour palettes.     
 
-`ncp.pal_score()`        # For all sequential palettes  
-`ncp.pal_score("Zinc")`  # For a single palette  
+`ncp.pal_badge()`        # For all sequential palettes  
+`ncp.pal_badge("Zinc")`  # For a single palette  
 
-The current scoring system is available only for sequential colour palettes.  
-The methodology, validation, and interpretation of the different metrics used in the colourmap validation score are currently being prepared for publication in a scientific article.  
+The current badge system is available only for sequential colour palettes.   
 
 ---
 
