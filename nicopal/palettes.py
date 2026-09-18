@@ -11,15 +11,12 @@ Created on Thu Mar  5 10:43:56 2026
 
 import numpy as np
 from .font import use_nunito
-from .loader import load_hex, load_rgb, _normalize_name
+from .loader import load_hex, _normalize_name
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
-import matplotlib.ticker as mticker
 from matplotlib.patches import FancyBboxPatch
 import importlib.resources as pkg_resources
 from matplotlib.colors import LinearSegmentedColormap
-from itertools import combinations
-from skimage import color as _skcolor
 
 # --- For reverse name
 def _parse_name(name):

@@ -16,7 +16,7 @@ Nicopal Version Information
 version = """\
 +---------------------------------------------------+
 | Package  : Nicopal                                |
-| Version  : 0.8.2                                  |
+| Version  : 0.8.3                                  |
 | Author   : Nicolas Tharaud                        |
 | Mail     : nicolas.tharaud@lsce.ipsl.fr           |
 | Citation : This work uses the Nicopal colour      |

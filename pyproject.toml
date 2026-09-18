@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nicopal"
-version = "0.8.2"
+version = "0.8.3"
 description = "Colour palettes designed for everyone."
 readme = {file = "README.md", content-type = "text/markdown"}
 authors = [{name = "Nicolas Tharaud", email="n.tharaud6@gmail.com"}]
